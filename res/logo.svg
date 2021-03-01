@@ -29,28 +29,6 @@
          offset="1"
          id="stop1081" />
     </linearGradient>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter1011"
-       x="-0.0025508115"
-       width="1.0051016"
-       y="-0.0030831096"
-       height="1.0061662">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.068021641"
-         id="feGaussianBlur1013" />
-    </filter>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1083"
-       id="linearGradient1087"
-       gradientUnits="userSpaceOnUse"
-       x1="82.062057"
-       y1="149.32018"
-       x2="158.23236"
-       y2="149.32018" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient1083"
@@ -59,34 +37,8 @@
        x1="82.062057"
        y1="149.32018"
        x2="158.23236"
-       y2="149.32018" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1083"
-       id="linearGradient1137"
-       gradientUnits="userSpaceOnUse"
-       x1="82.062057"
-       y1="149.32018"
-       x2="158.23236"
-       y2="149.32018" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1083"
-       id="linearGradient1139"
-       gradientUnits="userSpaceOnUse"
-       x1="82.062057"
-       y1="149.32018"
-       x2="158.23236"
-       y2="149.32018" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1083"
-       id="linearGradient1141"
-       gradientUnits="userSpaceOnUse"
-       x1="82.062057"
-       y1="149.32018"
-       x2="158.23236"
-       y2="149.32018" />
+       y2="149.32018"
+       gradientTransform="matrix(-1.9639002,1.1338583,0,2.2677166,289.72037,-212.11219)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient1083"
@@ -95,34 +47,8 @@
        x1="82.062057"
        y1="149.32018"
        x2="158.23236"
-       y2="149.32018" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1083"
-       id="linearGradient1145"
-       gradientUnits="userSpaceOnUse"
-       x1="82.062057"
-       y1="149.32018"
-       x2="158.23236"
-       y2="149.32018" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1083"
-       id="linearGradient1147"
-       gradientUnits="userSpaceOnUse"
-       x1="82.062057"
-       y1="149.32018"
-       x2="158.23236"
-       y2="149.32018" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1083"
-       id="linearGradient1149"
-       gradientUnits="userSpaceOnUse"
-       x1="82.062057"
-       y1="149.32018"
-       x2="158.23236"
-       y2="149.32018" />
+       y2="149.32018"
+       gradientTransform="matrix(1.9639002,-1.1338583,0,-2.2677166,-33.332865,468.41605)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -131,9 +57,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
+     inkscape:zoom="2"
      inkscape:cx="77.610236"
-     inkscape:cy="171.42857"
+     inkscape:cy="130.07692"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -152,7 +78,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -160,68 +86,15 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <g
-       id="g97"
-       transform="matrix(-0.6,0,0,0.6,105.95499,-55.725437)"
-       style="fill:url(#linearGradient1087);fill-opacity:1">
-      <g
-         id="g55"
-         transform="translate(48.833017,-0.65985152)"
-         style="fill:url(#linearGradient1141);fill-opacity:1">
-        <rect
-           style="fill:url(#linearGradient1135);fill-opacity:1;fill-rule:evenodd;stroke-width:0.284313"
-           id="rect10"
-           width="13.856406"
-           height="64"
-           x="62.126175"
-           y="65.804359"
-           transform="matrix(0.8660254,0.5,0,1,0,0)" />
-        <rect
-           style="fill:url(#linearGradient1137);fill-opacity:1;fill-rule:evenodd;stroke-width:0.284313;filter:url(#filter1011)"
-           id="rect10-3"
-           width="13.856406"
-           height="64"
-           x="-79.660767"
-           y="-126.12617"
-           transform="matrix(0,-1,-0.8660254,-0.5,0,0)" />
-        <rect
-           style="fill:url(#linearGradient1139);fill-opacity:1;fill-rule:evenodd;stroke-width:0.284313"
-           id="rect10-6"
-           width="13.856406"
-           height="64"
-           x="112.26976"
-           y="65.804359"
-           transform="matrix(0.8660254,0.5,0,1,0,0)" />
-      </g>
-      <g
-         id="g55-7"
-         transform="rotate(180,95.645259,149.7171)"
-         style="fill:url(#linearGradient1149);fill-opacity:1">
-        <rect
-           style="fill:url(#linearGradient1143);fill-opacity:1;fill-rule:evenodd;stroke-width:0.284313"
-           id="rect10-5"
-           width="13.856406"
-           height="64"
-           x="62.126175"
-           y="65.804359"
-           transform="matrix(0.8660254,0.5,0,1,0,0)" />
-        <rect
-           style="fill:url(#linearGradient1145);fill-opacity:1;fill-rule:evenodd;stroke-width:0.284313"
-           id="rect10-3-3"
-           width="13.856406"
-           height="64"
-           x="-79.660767"
-           y="-126.12617"
-           transform="matrix(0,-1,-0.8660254,-0.5,0,0)" />
-        <rect
-           style="fill:url(#linearGradient1147);fill-opacity:1;fill-rule:evenodd;stroke-width:0.284313"
-           id="rect10-6-5"
-           width="13.856406"
-           height="64"
-           x="112.26976"
-           y="65.804359"
-           transform="matrix(0.8660254,0.5,0,1,0,0)" />
-      </g>
-    </g>
+    <path
+       id="rect10"
+       style="fill:url(#linearGradient1135);fill-opacity:1;fill-rule:evenodd;stroke-width:1.19999999;stroke:#000000;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 167.71094 7.5566406 L 140.49805 23.267578 L 69.234375 64.412109 L 42.021484 80.123047 L 42.021484 111.54492 L 42.021484 225.25586 L 69.234375 209.54492 L 69.234375 95.833984 L 140.49805 54.689453 L 140.49805 168.40039 L 167.71094 152.68945 L 167.71094 38.978516 L 167.71094 7.5566406 z "
+       transform="scale(0.26458333)" />
+    <path
+       id="rect10-5"
+       style="fill:url(#linearGradient1143);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19999999;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 214.36719 31.046875 L 187.1543 46.757812 L 187.1543 160.4707 L 115.88867 201.61523 L 115.88867 87.902344 L 88.675781 103.61523 L 88.675781 248.74805 L 115.88867 233.03711 L 187.1543 191.89258 L 214.36719 176.18164 L 214.36719 144.75977 L 214.36719 31.046875 z "
+       transform="scale(0.26458333)" />
   </g>
 </svg>
