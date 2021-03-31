@@ -1,138 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-	  <title>Nekaprov Official Site</title>
-  </head>
-  <body>
+    <link rel="icon" href="./res/logo.svg" type="image/svg">
+    <title>Nekaprov Official Site</title>
+</head>
+
+<body>
     <style>
-*{align-content: center;justify-content: center;align-items: center;align-self: center;overflow: hidden;margin: 0;text-align: center;font-family: adam}.t{position: fixed;display: flex}.bk{width: 100vw;height: 100vh;background:url("Shutterstock-502743106-641673.png") no-repeat fixed;background-size: cover;opacity: 0.75;z-index: -1}.pp{top: 4.5vh;z-index: 10;outline: none;border: none;cursor: pointer}
-		.p,.pr{
-			letter-spacing: 0.2vw;
-			font-size: 3vh;
-			color:transparent;
-			width: 5vw;
-			height:4vh;
-			border: 1px solid black
-		}
-		.p::before,.pr::before,.p::after,.pr::after{
-			content: "";
-			position: absolute;
-			border-top: 2vh solid transparent;
-			border-bottom: 2vh solid transparent;
-			z-index: 10
-		}
-		.p::before{
-			right: 100%;
-			border-right: 3vw solid black;
-		}
-		.p::after{
-			left: 100%;
-			border-left: 10vw solid black;
-		}
-		.p{
-			background: linear-gradient(90deg,#00FFFF,#33ccff,#6699ff,#9966ff,#cc33ff,#ff00ff);
-			-webkit-background-clip: text;
-			background-clip: text;
-		}
-		.pr{
-			background: linear-gradient(90deg,#ff00ff,#cc33ff,#9966ff,#6699ff,#33ccff,#00FFFF);
-			-webkit-background-clip: text;
-			background-clip: text;
-		}
+        *{align-content: center;justify-content: center;align-items: center;align-self: center;overflow: hidden;margin: 0;text-align: center;font-family: lato}
 		.c{
-			cursor:pointer;
-			padding: 1.5vh;
-			justify-content: flex-start;
-			text-align: start;
-		}
-		.c:hover{
-			background: #cccccc
-		}
-		.cc{
-			padding: 1.5vh;
-			display: none
-		}
-		.ccv{
-			border: 0.2vh solid #888888;
-			box-shadow: 0.5vw 1vh 6px -6px;
-			width: 16vw;
-			z-index: 20;
-			left: 0px;
-			top: 0px;
-			font-size: 2vh;
-			position: absolute;
-			display: none;
-			background: linear-gradient(-45deg,#ff00ff,#00ffff);
-			border-radius: 0 10vh
-		}
-		.apa{
-			animation-name: cma;
-			animation-duration: 0.2s;
-			animation-timing-function: cubic-bezier(.5,0,0,1);
-			transform-origin: 0% 0%
-		}
-		@keyframes cma{
-			0%{
-				transform: scaleX(0) scaleY(0)
-			}
-			100%{
-				transform: scaleX(1) scaleY(1)
-			}
-		}
-		.alr{display: none;color: red;font-size: 2.4vh}
-		.input{
-			border-radius: 5vh;
-			border: 1px solid;
-			width: var(--pvw);
-			height: var(--pvh);
-			margin:2vh;
-			font-size: var(--pvs)
-		}
-		.rp{display: none}
-		#sub{
-			background: linear-gradient(45deg,rgba(255,153,0,0.6),rgba(255,0,255,0.6));
-			border-radius: 5vh;
-			margin-bottom: 2vh;
-			border: none;
-			width: 10vw;
-			height: 4.4vh;
-		}
-		#sub:hover{
-			background: linear-gradient(45deg,rgba(255,153,0,0.8),rgba(255,0,255,0.8))
-		}
-		#sub:active{
-			background: linear-gradient(45deg,rgba(255,153,0,1),rgba(255,0,255,1))
-		}
-		.switch{
-			cursor: pointer;
-			font-size: 3vh
-		}
-		.reg{display: none}
-		#lgcl{
-			position: fixed;
-			cursor: pointer;
-			top:0;
-			right:0;
-			padding: 0.8vh 4vh
-		}
-		#lgcl:hover{
-			background: rgba(255,0,4,0.7)
-		}
-		#lgcl:active{
-			background: rgba(255,0,4,1)
-		}
+            cursor:pointer;
+            padding: 1.4vh;
+        }
+        .c:hover{
+            background: #ccc;
+        }
+        .cc{
+            padding: 1.5vh;
+            display: none
+        }
+        .cvc:hover{
+
+        }
+        .ccv{
+            z-index: 20;
+            left: 0px;
+            top: 0px;
+            font-size: 2.2572vh;
+            position: absolute;
+            display: none;
+            filter: drop-shadow(3px 3px 5px rgba(50, 50, 0, 0.5));
+        }
+        .apa{
+            animation-name: cma;
+            animation-duration: 0.2s;
+            animation-timing-function: cubic-bezier(.5,0,0,1);
+            transform-origin: 0% 0%
+        }
+        .tbn{
+            display: inline;
+            margin: 0 3vh;
+            position: relative;
+            top:4vh;
+            font-size: 4vh;
+            border-bottom: 0.3vh solid;
+            left:18vh;        }
+        @keyframes cma{
+            0%{
+                transform: scaleX(0) scaleY(0)
+            }
+            100%{
+                transform: scaleX(1) scaleY(1)
+            }
+        }
 		:root{
 			--pvw: 20vw;
 			--pvh: 4.6vh;
 			--pvs: 2vh
 		}
 		@font-face{
-			font-family: adam;
-			src: url("Adam.otf")
+			font-family: lato;
+			src: url("./res/lato.ttf")
 		}
 		::-webkit-scrollbar {
-			width:0.6vw;
+			width:1.2vh;
+            height: 1.2vh
 		}
 		::-webkit-scrollbar-track {
 			background: rgba(255,255,255,0.1); 
@@ -144,546 +78,80 @@
 			background:linear-gradient(45deg,rgba(255,153,0,0.8),rgba(255,0,255,0.8)); 
 		}
     </style>
-	<div class="ccv">
-		<div style="margin: 0.1vh;border-radius: 0 10vh;background: #ffffff">
-			<div class="c" onMouseOver="cl()" onMouseOut="co()">Language</div>
-			<div class="c" onMouseOver="cs()" onMouseOut="co()">Customize</div>
-			<div class="c" onMouseOver="ck()" onMouseOut="co()">Enable Cookies</div>
-			<div class="c" onMouseOver="cf()" onMouseOut="co()">Send Feedback</div>
-			<div style="margin: 1vh;border-top: 0.1vh solid #888888"></div>
-			<div class="cc" style="display:block">This is a hidden options box, shown by right-clicking!</div>
-			<div class="cc">Use your national language to view this site!</div>
-			<div class="cc">Personalize this site with your style!</div>
-			<div class="cc">Use Cookies to save your style on this site!</div>
-			<div class="cc">Report if somethings goes wrong or makes you feel dissatisfied!</div>
-		</div>
-	</div>
-	  <div id="log" style="position: fixed;top: 0;display: none;z-index: 19;padding:10vh 38vw;background: rgba(136,136,136,0.50);height: 100vh; overflow: auto;margin: 0">
-		<div style="background: linear-gradient(45deg,#ff9900,#ff00ff);border-radius: 10.6vh">
-			<div style="background:#FFFFFF;margin:0.5vh 0.5vw;border-radius: 10vh">
-				<h1 class="log">Log in</h1>
-				<h1 class="reg">Register</h1>
-				<h1 class="rp">Can't Log In</h1>
-				<div class="switch log" onClick="slog()">Don't have an account? Register now!</div>
-				<div class="switch reg" onClick="sreg()">Already an account? Login now!</div>
-				<input type="text" placeholder="Username" class="input"/>
-				<div class="alr">*Usename mustn't be empty!</div>
-				<input type="password" placeholder="Old password" class="rp input"/>
-				<div class="alr">*Please enter one of your nearest 10 passwords!</div>
-				<div class="switch rp">New password</div>
-				<input type="password" placeholder="Password" class="input"/>
-				<div class="alr">*Password must have at least 8 characters, 1 letter, 1 number and 1 symbol!</div>
-				<div class="switch log" onClick="rp()" style="cursor: pointer">Fogot password?</div>
-				<input type="password" placeholder="Confirm Password" class="input reg"/>
-				<div class="alr reg">*Passwords must match!</div>
-				<input type="text" placeholder="Old Email/Phone number" class="rp input"/>
-				<div class="alr">*Please enter one of your nearest 10 Emails/Phone numbers!</div>
-				<div class="switch rp">New Email/Phone number</div>
-				<input type="text" placeholder="Email" class="input reg"/>
-				<div class="switch reg">or use Phone Number instead</div>
-				<div style="justify-content: flex-start">
-					<select class="reg" style="width: 2.4vw;height: 3.6vh">
-						<option>1faads</option>
-						<option>1sdsadas</option>
-						<option>3</option>
-						<option>3</option>
-						<option>5</option>
-						<option>3</option>
-						<option>6</option>
-						<option>4</option>
-						<option>b</option>
-						<option>3</option>
-						<option>7</option>
-						<option>5</option>
-					</select>
-					<input type="text" class="input reg" style="width: 16vw"/>
-				</div>
-				<div class="alr reg">*Please enter a valid email or phone number!</div>
-				<input type="text" class="input rp" style="width: 16vw" placeholder="Retype Email/Phonenumber"/>
-				<div class="switch log" style="display: none;cursor: pointer" onClick="rps()">Can't access to Email or Phone?</div>
-				<div class="reg" style="margin: 0.2vw;height:10vh;background: #B5B5B5;justify-content: flex-start">By Registering Account, you accecpt our Terms of Service<br><div style="overflow-y: scroll"><b>Thank you for using our services!</b><br>vb</div></div>
-				<input type="checkbox" class="reg">
-				<div class="reg">I've read and agreed with Terms of Service</div>
-				<input type="text" placeholder="Verification code" class="input reg"/>
-				<div class="alr reg">*Please enter the verification code!</div>
-				<div class="reg">We've sent an verification code to your</div>
-				<div class="reg"></div>
-				<div class="reg"> Don't recive code?</div>
-				<div class="reg rsd" style="cursor: pointer; color: red">Resend</div>
-				<div class="reg" style="cursor: pointer" onClick="re()">Back</div>
-				<button id="sub" onClick="check()">submit</button>
-			</div>
-		</div>
-		<div id="lgcl" onClick="tf()">X</div>
-	</div>
-	  <div class="bk t"></div>
-    <div class="t" style="top: 0; height: 13.5vh; width: 100vw; z-index: 5; background: #ffffff">
-      <div class="p pp t" style="left: 16vw"><div class="p">Home</div></div>
-      <div class="p pp t" style="left: 32vw"><div class="p">Apps</div></div>
-      <button class="pp t">image</button>
-      <div class="pr pp t" style="right: 32vw"><div class="pr">Home</div></div>
-      <div class="pr pp t" style="right: 16vw"><div class="pr">Community</div></div>
-	</div>
-	  <div class="t" style="z-index: 10; width: 10vw;height: 0;border-top: 3.6vh solid #E0E0E0;border-right: 3.6vw solid transparent;"></div>
-	  <div class="t" style="top: 8.4vh;z-index: 10; width: 6vw;height: 0;border-bottom: 3.6vh solid #e0e0e0;border-right: 3.6vw solid transparent;"></div>
-	  <div class="t" style="z-index: 10; width: 10vw;height: 0;border-top: 3.6vh solid #e0e0e0;border-left: 3.6vw solid transparent;right: 0"></div>
-	  <div class="t" style="top: 8.4vh;z-index: 10; width: 6vw;height: 0;border-bottom: 3.6vh solid #e0e0e0;border-left: 3.6vw solid transparent;right: 0"></div>
-	  <div class="t" onClick="tn();sreg()" style="cursor: pointer;right: 8vw;z-index: 11;top: 4vh;width:3vw;height:3vw;border-radius:50%;border: 0.3vw solid #000;display:block">
-		  <div style="background:#000;width:1.2vw;height:1.2vw;border-radius:50%;margin-top:0.3vw;margin-left:0.9vw"></div>
-		  <div style="margin-left:0.6vw;background:#000;width:1.8vw;height:1.2vw;border-radius:100vw 100vw 100vw 100vw/100vw 100vw 50vw 50vw;margin-top:0.15vw"></div>
-	  </div>
-	  <div class="t" onClick="tn();sreg()" style="cursor: pointer;right: 1.6vw; top:8.6vh; z-index: 11">Log-in</div>
-     <div class="t" style="top: 12vh;z-index: 6;background-image: linear-gradient(-90deg, #f39c12, #e67e22, #d35400, #ff105f, #d35400, #e67e22, #f39c12); height: 1vh; width: 100vw; left:0;right:0;margin-left:inherit;margin-right:inherit ">
-		 <div class="t" style="top:13vh;border-top: 10vh solid #ed2b34 ;border-left: 10vh solid transparent;border-right: 10vh solid transparent;height: 0;width: 6.5vw"></div>
-		 <div class="t" style="z-index: 7;top: 12vh; border-top: 10vh solid #ffffff;border-left: 10vh solid transparent;border-right: 10vh solid transparent;height: 0;width: 6vw"></div>
-	  </div>
-	  <div class="t" style="top: 13.5vh;z-index: 3;background-image: linear-gradient(-90deg, #f39c12, #e67e22, #d35400, #ff105f, #d35400, #e67e22, #f39c12); height: 0.5vh; widht: 100vw; left:0;right:0;margin-left:inherit;margin-right:inherit ">
-		  <div class="t" style="top:14vh;border-top: 10vh solid #ed2b34 ;border-left: 10vh solid transparent;border-right: 10vh solid transparent;height: 0;width: 7.2vw"></div>
-		  <div class="t" style="top:13.5vh;border-top: 10vh solid #ffffff ;border-left: 10vh solid transparent;border-right: 10vh solid transparent;height: 0;width: 7vw"></div>
-		  <div class="t" style="z-index: 7;top: 12vh; border-top: 10vh solid #ffffff;border-left: 10vh solid transparent;border-right: 10vh solid transparent;height: 0;width: 6vw"></div>
-	  </div>
-	 <div style="top: 14vh;z-index: 1;width: 100vw;box-shadow: 0 1.7vh 6px -6px #666666"></div>
-	  <script>
-		  window.addEventListener("keydown", function(e) {
-				 if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {disabledEvent(e);}
-				 if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {disabledEvent(e);}
-				 if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {disabledEvent(e);}
-				 if (e.ctrlKey && e.keyCode == 85) {disabledEvent(e);}
-				 if (event.keyCode == 123) {disabledEvent(e);}
-			 }, false);
-  			   function disabledEvent(e){
-				 if (e.stopPropagation){
-				 e.stopPropagation();
-			    } else if (window.event){
-				 window.event.cancelBubble = true;
-				 }
-				 e.preventDefault();
-				 return false;
-			 };
-		var cm = document.getElementsByClassName("ccv"),
-			cc =document.getElementsByClassName("cc"),
-			ip = document.getElementsByClassName("input"),
-			rg = document.getElementsByClassName("reg"),
-			ar = document.getElementsByClassName("alr"),
-			lg = document.getElementsByClassName("log"),
-			ei = document.getElementsByClassName("erinf"),
-			rs = document.getElementsByClassName("rp"),
-			sm = document.getElementById("sub"),
-			ld = document.getElementById("log"),
-			rt = document.documentElement,
-			mf = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/,
-			ps = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,128}$/,
-			u,
-			p,
-			cp,
-			m,
-			n,
-			r = Math.round(Math.random() * 1000000),
-			pr,
-			pe;
-		  function co(){
-			  cc[0].style.display = "block";
-			  cc[1].style.display = "none";
-			  cc[2].style.display = "none";
-			  cc[3].style.display = "none";
-			  cc[4].style.display = "none";
-		  };
-		  function cl(){
-			  cc[0].style.display = "none";
-			  cc[1].style.display = "block";
-			  cc[2].style.display = "none";
-			  cc[3].style.display = "none";
-			  cc[4].style.display = "none";
-		  };
-		  function cs(){
-			  cc[0].style.display = "none";
-			  cc[1].style.display = "none";
-			  cc[2].style.display = "block";
-			  cc[3].style.display = "none";
-			  cc[4].style.display = "none";
-		  };
-		  function ck(){
-			  cc[0].style.display = "none";
-			  cc[1].style.display = "none";
-			  cc[2].style.display = "none";
-			  cc[3].style.display = "block";
-			  cc[4].style.display = "none";
-		  };
-		  function cf(){
-			  cc[0].style.display = "none";
-			  cc[1].style.display = "none";
-			  cc[2].style.display = "none";
-			  cc[3].style.display = "none";
-			  cc[4].style.display = "block";
-		  };
-			 window.addEventListener("contextmenu", (e) =>{
-			 e.preventDefault();
-				 cm[0].style.display = "block";
-				 cm[0].classList.add("apa");
-				 cm[0].style.top = e.clientY + 'px';
-				 cm[0].style.left = e.clientX + 'px';
-				 setTimeout(function(){
-					 cm[0].classList.remove("apa")
-				 }, 200)
-			 },false);
-		  window.addEventListener('click', () =>{
-			  cm[0].style.display = "none"
-		     });
-		function tn(){
-			ld.style.display = "block"
-		};
-		function tf(){
-			ld.style.display = "none"
-		};
-		function rn(){
-			ar[0].style.display = "none";
-			ar[1].style.display = "none";
-			ar[2].style.display = "none";
-			ar[3].style.display = "none";
-			ar[4].style.display = "none";
-			ar[5].style.display = "none";
-			ar[6].style.display = "none";
-			ip[0].style.borderColor = "black";
-			ip[1].style.borderColor = "black";
-			ip[2].style.borderColor = "black";
-			ip[3].style.borderColor = "black";
-			ip[4].style.borderColor = "black";
-			ip[5].style.borderColor = "black";
-			ip[6].style.borderColor = "black";
-			ip[7].style.borderColor = "black";
-			ip[8].style.borderColor = "black"
-			
-		};
-		function slog(){
-			rg[0].style.display = "inline";
-			rg[1].style.display = "flex";
-			rg[2].style.display = "inline";
-			rg[5].style.display = "flex";
-			rg[6].style.display = "inline";
-			rg[5].style.fontSize = "3vh";
-			rg[7].style.display = "inline";
-			rg[4].style.display = "inline";
-			lg[0].style.display = "none";
-			lg[1].style.display = "none";
-			lg[2].style.display = "none";
-			lg[3].style.display = "none";
-			rn()
-		};
-		function sreg(){
-			rg[0].style.display = "none";
-			rg[1].style.display = "none";
-			rg[2].style.display = "none";
-			rg[3].style.display = "none";
-			rg[4].style.display = "none";
-			rg[5].style.display = "none";
-			rg[6].style.display = "none";
-			rg[7].style.display = "none";
-			rg[8].style.display = "none";
-			rg[9].style.display = "none";
-			rg[10].style.display = "none";
-			rg[11].style.display = "none";
-			rg[12].style.display = "none";
-			rg[13].style.display = "none";
-			rg[14].style.display = "none";
-			rg[15].style.display = "none";
-			rg[16].style.display = "none";
-			rg[17].style.display = "none";
-			rg[18].style.display = "none";
-			lg[0].style.display = "flex";
-			lg[1].style.display = "flex";
-			lg[2].style.display = "flex";
-			lg[3].style.display = "none";
-			ip[0].style.display = "inline";
-			ip[1].style.display = "inline";
-			rs[0].style.display = "none";
-			rs[1].style.display = "none";
-			rs[2].style.display = "none";
-			rs[3].style.display = "none";
-			rs[4].style.display = "none";
-			rn()
-		};
-		function mna(){
-					ar[5].style.display = "none";
-					ip[6].style.borderColor = "black";
-					ip[5].style.borderColor = "black";
-					m = 1
-				};
-		function cun(){
-				if (ip[0].value.length == 0) {
-					ar[0].style.display = "flex";
-					ip[0].style.borderColor = "red"
-				} else{
-					ar[0].style.display = "none";
-					ip[0].style.borderColor = "black";
-					//db test
-				}
-		};
-		function check(){
-			if (window.getComputedStyle(lg[0]).display !== "none") {
-				cun();
-				if(ip[2].value.match(ps)) {
-					ar[2].style.display = "none"
-					ip[2].style.borderColor = "black";
-					//db test
-				} else {
-					ar[2].style.display = "flex";
-					ip[2].style.borderColor = "red";
-				}
-			};
-			if (window.getComputedStyle(rg[0]).display !== "none") {
-				if (ip[0].value.length == 0) {
-					ip[0].style.borderColor = "red";
-					ar[0].style.display = "flex";
-					u = 0
-				} else{
-					ip[0].style.borderColor = "black";
-					ar[0].style.display = "none";
-					u = 1;
-					//db test
-				};
-				if(ip[2].value.match(ps)) {
-					ip[2].style.borderColor = "black";
-					ar[2].style.display = "none";
-					p = 1
-				} else{
-					ip[2].style.borderColor = "red";
-					ar[2].style.display = "flex";
-					p = 0
-				};
-				if (ip[2].value == ip[3].value && ip[3].value.match(ps))  {
-					ip[3].style.borderColor = "black";
-					ar[3].style.display = "none";
-					cp = 1;
-					//db test
-				} else {
-					ip[3].style.borderColor = "red";
-					ar[3].style.display = "flex";
-					cp = 0
-				};
-				if (ip[5].value.match(mf)){
-					mna();
-					n =  "Email";
-					//db test
-				} else if (8 <= ip[6].value.length && ip[6].value.length <= 13) {
-					mna();
-					n ="Phone";
-					//db test
-				} else {
-					ar[5].style.display = "flex";
-					ip[6].style.borderColor = "red";
-					ip[5].style.borderColor = "red";
-					m = 0
-				};
-			};
-			if (ip[0].style.display == "none" && rg[12].value.length != 6 && rg[12].value != r && window.getComputedStyle(rs[0]).display === "none") {
-				ar[6].style.display = "flex";
-				rg[12].style.borderColor = "red"
-			} else if (rg[12].value.length == 6 && rg[12].value == r) {
-				ar[6].style.display = "none";
-				rg[12].style.borderColor = "black";
-				//db test
-			};
-			if (u == 1 && p == 1 && cp == 1 && m == 1) {
-				ip[0].style.display = "none";
-				ip[2].style.display = "none";
-				rg[2].style.display = "none";
-				rg[3].style.display = "none";
-				rg[4].style.display = "none";
-				rg[5].style.display = "none";
-				rg[6].style.display = "none";
-				rg[7].style.display = "none";
-				rg[8].style.display = "none";
-				rg[9].style.display = "block";
-				rg[10].style.display = "inline";
-				rg[11].style.display = "inline";
-				rg[12].style.display = "flex";
-				rg[14].style.display = "inline";
-				rg[15].style.display = "inline";
-				rg[16].style.display = "block";
-				rg[17].style.display = "block";
-				rg[18].style.display = "block";
-				rg[15].innerHTML = n
-			};
-			if (window.getComputedStyle(rs[0]).display !== "none" && window.getComputedStyle(rs[1]).display === "none") {
-				cun();
-				if (ip[5].value.match(mf)){
-					mna();
-					n =  "Email";
-					//db test
-				} else if (8 <= ip[6].value.length && ip[6].value.length <= 13) {
-					mna();
-					n ="Phone";
-					//db test
-				} else {
-					ar[5].style.display = "flex";
-					ip[6].style.borderColor = "red";
-					ip[5].style.borderColor = "red";
-					m = 0
-				}
-			};
-			if (window.getComputedStyle(rs[0]).display !== "none" && window.getComputedStyle(rs[1]).display !== "none") {
-				cun();
-				if(ip[1].value.match(ps)) {
-					ar[1].style.display = "none"
-					ip[1].style.borderColor = "black";
-					//db test
-				} else {
-					ar[1].style.display = "flex";
-					ip[1].style.borderColor = "red";
-				};
-				if(ip[2].value.match(ps)) {
-					ar[2].style.display = "none"
-					ip[2].style.borderColor = "black";
-					//db test
-				} else {
-					ar[2].style.display = "flex";
-					ip[2].style.borderColor = "red";
-				};
-				if (ip[4].value.match(mf)){
-					ip[4].style.borderColor = "black";
-					n =  "Email";
-					//db test
-				} else if (8 <= ip[4].value.length && ip[4].value.length <= 13) {
-					ip[4].style.borderColor = "black";
-					n ="Phone";
-					//db test
-				} else {
-					ar[5].style.display = "flex";
-					ip[4].style.borderColor = "red";
-				};
-				if (ip[2].value == ip[3].value && ip[3].value.match(ps))  {
-					ip[3].style.borderColor = "black";
-					ar[3].style.display = "none";
-					cp = 1;
-					//db test
-				} else {
-					ip[3].style.borderColor = "red";
-					ar[3].style.display = "flex";
-					cp = 0
-				};
-				if (ip[4].value.match(mf) || ip[4].value.length <= 13 && 8 <= ip[4].value.length){
-					ip[4].style.borderColor = "black";
-					ar[4].style.display = "none"
-					//db test
-				} else {
-					ip[4].style.borderColor = "red";
-					ar[4].style.display = "flex"
-				};
-				if (ip[5].value.match(mf)){
-					mna();
-					n =  "Email";
-					//db test
-				} else if (8 <= ip[6].value.length && ip[6].value.length <= 13) {
-					mna();
-					n ="Phone";
-					//db test
-				} else {
-					ar[5].style.display = "flex";
-					ip[6].style.borderColor = "red";
-					ip[5].style.borderColor = "red";
-					m = 0
-				};
-			}
-		};
-		function re() {
-			ip[0].style.display = "inline";
-			ip[2].style.display = "inline";
-			rg[9].style.display = "none";
-			rg[10].style.display = "none";
-			rg[11].style.display = "none";
-			rg[12].style.display = "none";
-			rg[13].style.display = "none";
-			rg[14].style.display = "none";
-			rg[15].style.display = "none";
-			rg[16].style.display = "none";
-			rg[17].style.display = "none";
-			rg[18].style.display = "none";
-			slog();
-			rn()
-		};
-		ld.addEventListener("keydown", function(event) {
-			if (event.keyCode === 13) {
-				event.preventDefault();
-				check()
-			}
-		});
-		function setInputFilter(input,inputFilter) {
-				["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
-					input.addEventListener(event, function() {
-						if (inputFilter(this.value)) {
-							this.oldValue = this.value;
-							this.oldSelectionStart = this.selectionStart;
-							this.oldSelectionEnd = this.selectionEnd;
-						} else if (this.hasOwnProperty("oldValue")) {
-							this.value = this.oldValue;
-							this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
-						} else {
-							this.value = "";
-						}
-					});
-				});
-			};
-		setInputFilter(ip[6],function(value) {
-			return /^\d*$/.test(value)
-		});
-		setInputFilter(rg[12],function(value) {
-			return /^\d*$/.test(value)
-		});
-		function rp(){
-			ip[2].style.display = "none";
-			rg[4].style.display = "inline";
-			rg[5].style.display = "flex";
-			rg[6].style.display = "inline";
-			rg[5].style.fontSize = "3vh";
-			rg[7].style.display = "inline";
-			rg[1].style.display = "flex";
-			lg[1].style.display = "none";
-			rg[0].style.display = "none";
-			rs[0].style.display = "inline";
-			lg[0].style.display = "none";
-			lg[2].style.display = "none";
-			ar[0].style.display = "none";
-			ar[2].style.display = "none";
-			lg[3].style.display = "flex";
-			ip[0].style.borderColor = "black";
-			rn()
-		};
-		function rps(){
-			rs[1].style.display = "flex";
-			rs[2].style.display = "flex";
-			rs[3].style.display = "flex";
-			rs[4].style.display = "inline";
-			lg[3].style.display = "none";
-			rg[2].style.display = "inline";
-			ip[0].style.display = "inline";
-			ip[1].style.display = "inline";
-			ip[2].style.display = "inline";			
-			ip[3].style.display = "inline";	
-			rn()
-		};
-		if (window.innerWidth / window.innerHeight <= 1){
-			document.getElementById("log").style.padding = "0";
-			document.getElementById("log").style.width = "100vw";
-			rt.style.setProperty('--pvw','80vw');
-			ip[6].style.width = "60vw";
-			sm.style.width = "40vw";
-			rt.style.setProperty('--pvh','8vh');
-			ip[6].style.height = "6vh";
-			sm.style.height = "8vh";
-			document.querySelector("*").style.fontSize = "4vh";
-			rt.style.setProperty('--pvs','6vw');
-			sm.style.fontSize = "6vw"
-		}
+    <div style="width: 100%;height: 16vh;background: linear-gradient(90deg,#ff00ff,#ff5050,#ff9900);position: relative;box-shadow: 0px 5px 5px rgba(50, 50, 0, 0.5);z-index: 2">
+    	<img src="./res/logo.svg" style="width:15.2vh;height:15.2vh;left:2vh;top:0.4vh;position: absolute;"/>
+    	<div style="left:18vh;top:1.6vh;position: absolute;font-size: 10vh">Nekaprov</div>
+    	<div class="tbn">Home</div>
+    	<div class="tbn">Projects</div>
+        <div class="tbn">Shop</div>
+    	<div class="tbn">Community</div>
+    	<div style="top:0;width: 100%;height: 16vh;position:absolute;filter: drop-shadow(-8px 0px 4px rgba(50, 50, 0, 0.5));">
+    		<div style="right:0;width: 48vh;height: 16vh;background: linear-gradient(90deg,#ff00ff,#ff5050,#ff9900);position:absolute;clip-path: polygon(75% 0, 100% 0, 100% 100%, 75% 100%, 58% 50%);"></div>
+    	</div>
+    </div>
+    <div style="width:100%; height:84vh;overflow: scroll;position: relative;">
+    	<div style="width:120vh;height:80vh;background: orange;left:6vh;top: 6vh;overflow: auto;position: absolute;border-radius: 2vh">
+    		<div style="margin: 1.6vh;width: 116.8vh;height: 76.8vh;background: #ff9933;border-radius: 2vh">
+    			content
+    		</div>
+    	</div>
+    	<div style="width:58vh;height:38vh;background: orange;left:132vh;top: 6vh;overflow: auto;position: absolute;border-radius: 2vh">
+    		<div style="margin: 1.6vh;width: 54.8vh;height: 34.8vh;background: #ff9933;border-radius: 2vh">
+    			content
+    		</div>
+    	</div>
+    	<div style="width:58vh;height:38vh;background: orange;left:132vh;top: 48vh;overflow: auto;position: absolute;border-radius: 2vh">
+    		<div style="margin: 1.6vh;width: 54.8vh;height: 34.8vh;background: #ff9933;border-radius: 2vh">
+    			content
+    		</div>
+    	</div>
+    </div>
+    <div class="ccv">
+        <div style="border: 0.2vh solid #888888;width: 26.8vh;height: 30vh;background: linear-gradient(-45deg,#ff00ff,#00ffff);clip-path: polygon(0 0, 75% 0, 100% 22%, 100% 100%, 25% 100%, 0 78%);">
+            <ul style="margin: 0.1vh;height: 29.8vh;clip-path: polygon(0 0, 75% 0, 100% 22%, 100% 100%, 25% 100%, 0 78%);background: #ffffff;padding: 0">
+                <li class="c">Share</li>
+                <li class="c">sd</li>
+                <li class="c">Reload</li>
+                <div style="margin: 1vh;border-top: 0.1vh solid #888888"></div>
+                <li class="c">Language</li>
+                <li class="c">Customize</li>
+            </ul>
+        </div>
+    <script type="text/javascript">
+    window.addEventListener("keydown", function(e) {
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { disabledEvent(e); }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) { disabledEvent(e); }
+            if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) { disabledEvent(e); }
+            if (e.ctrlKey && e.keyCode == 85) { disabledEvent(e); }
+            if (event.keyCode == 123) { disabledEvent(e); }
+        }, false);
+    
+        function disabledEvent(e) {
+            if (e.stopPropagation) {
+                e.stopPropagation();
+            } else if (window.event) {
+                window.event.cancelBubble = true;
+            }
+            e.preventDefault();
+            return false;
+        };
 
-//		  var td = new Date(),
-//			  h = td.getHours(),
-//			  m = td.getMinutes();
-//		  m = checkTime(m);
-//		  setInterval(function(){document.getElementById('txt').innerHTML = h + ":" + m });
-//function checkTime(i) {
-//  if (i < 10) {i = "0" + i};
-//  return i;
-//}
-	 </script>
-  </body>
+        var cm = document.getElementsByClassName("ccv"),
+            cc = document.getElementsByClassName("cc");
+        window.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            cm[0].style.display = "block";
+            cm[0].classList.add("apa");
+            cm[0].style.top = e.clientY + 'px';
+            cm[0].style.left = e.clientX + 'px';
+            setTimeout(function() {
+                cm[0].classList.remove("apa")
+            }, 200)
+        }, false);
+        window.addEventListener('click', () => {
+            cm[0].style.display = "none"
+        });
+    </script>
+</body>
+
 </html>
