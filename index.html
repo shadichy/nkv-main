@@ -7,9 +7,10 @@
     <title>Nekaprov Official Site</title>
 </head>
 
-<body>
+<body style="margin: 0">
     <style>
-        *{align-content: center;justify-content: center;align-items: center;align-self: center;overflow: hidden;margin: 0;text-align: center;font-family: lato}
+        *{overflow: hidden;font-family: lato}
+        .al{align-content: center;justify-content: center;align-items: center;align-self: center;text-align: center;}
 		.c{
             cursor:pointer;
             padding: 1.4vh;
@@ -41,12 +42,14 @@
         }
         .tbn{
             display: inline;
-            margin: 0 3vh;
-            position: relative;
-            top:4vh;
             font-size: 4vh;
             border-bottom: 0.3vh solid;
-            left:18vh;        }
+            margin: 0 3vh;
+            width: 40vh;
+            cursor: pointer;
+            position: relative;
+            top: 2vh
+        }
         @keyframes cma{
             0%{
                 transform: scaleX(0) scaleY(0)
@@ -78,15 +81,17 @@
 			background:linear-gradient(45deg,rgba(255,153,0,0.8),rgba(255,0,255,0.8)); 
 		}
     </style>
-    <div style="width: 100%;height: 16vh;background: linear-gradient(90deg,#ff00ff,#ff5050,#ff9900);position: relative;box-shadow: 0px 5px 5px rgba(50, 50, 0, 0.5);z-index: 2">
+    <div style="width: 100%;height: 16vh;background: linear-gradient(90deg,rgba(255, 0, 255,0.7),rgba(255, 80, 80,0.7),rgba(255, 153, 0,0.7));box-shadow: 0px 5px 5px rgba(50, 50, 0, 0.5);z-index: 2;position: relative;">
     	<img src="./res/logo.svg" style="width:15.2vh;height:15.2vh;left:2vh;top:0.4vh;position: absolute;"/>
-    	<div style="left:18vh;top:1.6vh;position: absolute;font-size: 10vh">Nekaprov</div>
-    	<div class="tbn">Home</div>
-    	<div class="tbn">Projects</div>
-        <div class="tbn">Shop</div>
-    	<div class="tbn">Community</div>
+    	<div style="left:18vh;position: absolute;font-size: 10vh;height: 16vh;top: 2vh">Nekaprov</div>
+        <ul style="left: 54vh;position: absolute;top:0;right: 20vh;height: 22vh" class="al">
+            <li class="tbn">Home</li>
+            <li class="tbn">Projects</li>
+            <li class="tbn">Shop</li>
+            <li class="tbn">Community</li>
+        </ul>
     	<div style="top:0;width: 100%;height: 16vh;position:absolute;filter: drop-shadow(-8px 0px 4px rgba(50, 50, 0, 0.5));">
-    		<div style="right:0;width: 48vh;height: 16vh;background: linear-gradient(90deg,#ff00ff,#ff5050,#ff9900);position:absolute;clip-path: polygon(75% 0, 100% 0, 100% 100%, 75% 100%, 58% 50%);"></div>
+    		<div style="right:0;width: 20vh;height: 16vh;background: linear-gradient(90deg,#ff5050,#ff9900);position:absolute;clip-path: polygon(40% 0, 100% 0, 100% 100%, 40% 100%, 0 50%);"></div>
     	</div>
     </div>
     <div style="width:100%; height:84vh;overflow: scroll;position: relative;">
