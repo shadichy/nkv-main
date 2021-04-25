@@ -1,1 +1,99 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="./res/logo.svg" type="image/svg">
+	<title></title>
+</head>
+<body style="margin: 0">
+<style type="text/css">
+	
+</style>
+<div style="height: 1080px;width:1920px;overflow: hidden;display: block;border: 1px solid black">
+	<canvas id="td" style="background: linear-gradient(45deg,#ff6600,#ff33cc,#00ccff)"></canvas>
+</div>
+<script type="text/javascript">
+	var td = document.getElementById('td'),
+		ctx = td.getContext("2d"),
+		ml = 1600,
+		mt = 900,
+		up,
+		dw,
+		lf,
+		rh,
+		p,
+		map = {},
+		spd = 30;
+	td.width = 5120;
+	td.height = 2880;
+	var pw = td.width / 2,
+		ph = td.height / 2;
+	document.onkeydown = function(e){
+		map[e.keyCode] = e.type == 'keydown';
+		if (map[87]){up=1};//W key
+		if (map[83]){dw=1};//S key
+		if (map[65]){lf=1};//A key
+		if (map[68]){rh=1};//D key
+	};
+	document.onkeyup = function(e){
+		map[e.keyCode] = false;
+		if (!map[87]){up=0};//W key
+		if (!map[83]){dw=0};//S key
+		if (!map[65]){lf=0};//A key
+		if (!map[68]){rh=0};//D key
+	};
+	function dP(){
+		ctx.beginPath();
+		ctx.arc(pw, ph, 100, 0, Math.PI * 2);
+		ctx.fillStyle = 'green'
+		ctx.fill();
+	};
+	function cl(){
+		ctx.clearRect(0,0,td.width,td.height);
+	};
+	function nP(){
+		if (up==1){
+			mt -= spd;
+			ph -= spd;
+		};
+		if (dw==1){
+			mt += spd;
+			ph += spd;
+		};
+		if (lf==1){
+			ml -= spd;
+			pw -= spd;
+		};
+		if (rh==1){
+			ml += spd;
+			pw += spd;
+		};
+	};
+	function dW(){
+	//	if (pw < 0){
+//			pw = 0;
+//		};
+//		if (pw + 100 > td.width) {
+//			pw = td.width -100
+//		};
+//		if (ph < 0){
+//			ph = 0;
+//		};
+//		if (ph + 100 > td.height) {
+//			ph = td.height -100
+//		};
+	};
+	function update(){
+		cl();
+		dP();
+		nP();
+		dW();
+		requestAnimationFrame(update);
+		td.style.marginTop = mt*-1 + "px";
+		td.style.marginLeft = ml*-1 + "px";
+	};
+	update();
+</script>
+</body>
+</html>
