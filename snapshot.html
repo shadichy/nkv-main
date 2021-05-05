@@ -8,24 +8,24 @@
 </head>
 <body style="margin: 0">
     <style>
-        *{font-family: lato;color: #fff}
+        *{font-family: lato;color: #fff;}
         .al{align-content: center;justify-content: center;align-items: center;align-self: center;text-align: center;}
 		.c{
             cursor:pointer;
-            padding: 1.4vh;
+            padding: 1.4vmin;
         }
         .c:hover{
             background: #ccc;
         }
         .cc{
-            padding: 1.5vh;
+            padding: 1.5vmin;
             display: none
         }
         .ccv{
             z-index: 20;
             left: 0px;
             top: 0px;
-            font-size: 2.2572vh;
+            font-size: 2.2572vmin;
             position: absolute;
             display: none;
             filter: drop-shadow(3px 3px 5px rgba(50, 50, 0, 0.5));
@@ -38,12 +38,12 @@
         }
         .tbn{
             display: inline;
-            font-size: 4vh;
-            border-bottom: 0.3vh solid #000;
-            margin: 0 3vh;
+            font-size: 4vmin;
+            border-bottom: 0.3vmin solid #000;
+            margin: 0 3vmin;
             cursor: pointer;
             position: relative;
-            top: 5vh
+            top: 5vmin
         }
         .box{
             box-sizing: border-box;
@@ -51,7 +51,7 @@
         }
         .sld{
             width: 25%;
-            min-height: 84vh;
+            min-height: 84vmin;
             transition: 0.6s;
             z-index: 10;
             position: relative;
@@ -87,9 +87,7 @@
             }
         }
 		:root{
-			--pvw: 20vw;
-			--pvh: 4.6vh;
-			--pvs: 2vh
+			--nh
 		}
 		@font-face{
 			font-family: lato;
@@ -112,8 +110,8 @@
             src: url("./res/lato-hair.ttf");
         }
 		::-webkit-scrollbar {
-			width:1.2vh;
-            height: 1.2vh
+			width:1.2vmin;
+            height: 1.2vmin
 		}
 		::-webkit-scrollbar-track {
 			background: rgba(255,255,255,0.1); 
@@ -125,25 +123,25 @@
 			background:rgba(255,153,0,0.8);
 		}
     </style>
-    <div style="width: 100%;height: 16vh;background: linear-gradient(90deg,rgb(255, 0, 255),rgb(255, 80, 80),rgb(255, 153, 0));box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);z-index: 20;position: fixed ">
-    	<label for="r1" style="z-index: 10;cursor: pointer;width: 20vh;height: 16vh;position: relative;">
-            <img src="./res/logo.svg" style="width:15.2vh;height:15.2vh;left:2vh;top:0.4vh;position: absolute;"/>
+    <div style="width: 100%;height: 16vmin;background: linear-gradient(90deg,rgb(255, 0, 255),rgb(255, 80, 80),rgb(255, 153, 0));box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);z-index: 20;position: fixed;top: 0">
+    	<label for="r1" style="z-index: 10;cursor: pointer;width: 20vmin;height: 16vmin;position: relative;">
+            <img src="./res/logo.svg" style="width:15.2vmin;height:15.2vmin;left:2vmin;top:0.4vmin;position: absolute;"/>
         </label>
-    	<label for="r1" style="left:18vh;position: absolute;font-size: 10vh;height: 16vh;top: 2vh;z-index: 10;cursor: pointer;">Nekaprov</label>
-        <div style="left: 60vh;position: absolute;top:0;right: 20vh;height: 16vh;z-index: 10" class="al">
+    	<label for="r1" style="left:18vmin;position: absolute;font-size: 10vmin;height: 16vmin;top: 2vmin;z-index: 10;cursor: pointer;">Nekaprov</label>
+        <div style="left: 60vmin;position: absolute;top:0;right: 20vmin;height: 16vmin;z-index: 10" class="al">
             <label for="r1" class="tbn">Home</label>
             <label for="r2" class="tbn">Projects</label>
             <label for="r3" class="tbn">Shop</label>
             <label for="r4" class="tbn">Community</label>
         </div>
-    	<div style="top:0;width:100%;height:16vh;position:absolute;filter:drop-shadow(-8px 0px 6px rgba(0, 0, 0, 0.5));">
-    		<div style="right:0;width: 20vh;height: 16vh;background: linear-gradient(90deg,#ff5050,#ff9900);position:absolute;clip-path: polygon(40% 0, 100% 0, 100% 100%, 40% 100%, 0 50%);">
-                <div style="width: 10vh;height: 10vh;position: absolute;right: 3vh;top: 3vh;background: rgba(255,255,255,0.3);border-radius: 20vh">
+    	<div style="top:0;width:100%;height:16vmin;position:absolute;filter:drop-shadow(-8px 0px 6px rgba(0, 0, 0, 0.5));">
+    		<div style="right:0;width: 20vmin;height: 16vmin;background: linear-gradient(90deg,#ff5050,#ff9900);position:absolute;clip-path: polygon(40% 0, 100% 0, 100% 100%, 40% 100%, 0 50%);">
+                <div style="width: 10vmin;height: 10vmin;position: absolute;right: 3vmin;top: 3vmin;background: rgba(255,255,255,0.3);border-radius: 20vmin">
                 </div>
             </div>
     	</div>
     </div>
-    <div style="width:100%;z-index: 1;overflow-y: auto;height: 100vh;background: #444;overflow-x: hidden;position: fixed;top: 16vh">
+    <div style="width:100%;z-index: 1;overflow-y: auto;height:calc(100vh - 16vmin);background: #444;overflow-x: hidden;margin-top: 16vmin">
         <div style="width: 400%;display: flex;position: relative;">
             <input type="radio" name="r" id="r1" checked>
             <input type="radio" name="r" id="r2">
@@ -152,41 +150,43 @@
             <input type="radio" name="r" id="r5">
             <div style="top: 0;width: 100%;height: 100%;background: #444;position: absolute;display: block;margin-left: 0"></div>
             <div class="sld s1">
-<div style="display: block;filter:drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));position: relative;">
-        <div style="background: linear-gradient(45deg,rgb(255, 0, 255),rgb(255, 80, 80),rgb(255, 153, 0)); width: 104.2vh;margin:10vh 0 0 10vh;clip-path: polygon(0 0,calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 5vh 100%, 0 calc(100% - 5vh));padding:.1vh">
-            <div style="background: #333;width: 100vh;clip-path: polygon(0 0,calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 5vh 100%, 0 calc(100% - 5vh));font-size: 5vh;padding: 2vh;">
-                <p style="font-family: lato-bold;font-size: 6vh;margin:2vh 1vh 1vh">Vâng và chào mừng các bạn đến với trang web của thằng Shadichy!</p>
-                <p style="font-family: lato-ita;font-size: 2vh;margin: 0 3vh 3vh">Link FB bên dưới, tí vô report</p>
-                <p style="font-family: lato-thin;font-size: 3vh;margin: 0 1vh">
-Test web be like: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu vestibulum magna. Aenean eget enim vitae diam facilisis consectetur vel vitae urna. Phasellus eget commodo diam, non cursus ligula. Nullam velit tortor, condimentum vitae tristique consequat, fringilla eu enim. Fusce at nulla pulvinar, tristique augue eu, vestibulum libero. Aliquam erat volutpat. Nulla finibus, mauris vitae rhoncus accumsan, enim elit interdum libero, non malesuada leo purus id dolor. Pellentesque vitae felis dignissim, ultricies urna convallis, bibendum sapien. In hac habitasse platea dictumst. Mauris lacinia magna at dolor semper accumsan. Praesent at elementum odio, vitae lacinia orci. Proin pretium venenatis hendrerit. Donec eget iaculis ex, vitae bibendum orci.<br><br>
-
-Fusce porta, tellus nec pulvinar malesuada, augue enim congue ex, a molestie sem dui vitae sapien. Aenean rutrum nibh eget nulla suscipit aliquet. Nulla risus diam, placerat non vehicula ut, porta et lacus. Vestibulum auctor dui placerat justo porttitor, nec pulvinar ipsum ultricies. Nullam pulvinar tempor egestas. Sed facilisis vestibulum faucibus. Donec tellus felis, luctus non ultrices id, mollis et ligula. Donec porttitor luctus laoreet. Vivamus vel scelerisque metus, vel dapibus orci. Etiam dapibus sapien at est dignissim elementum sed quis lacus. Fusce elementum sed nunc at condimentum. Sed facilisis leo vel urna congue, eu blandit neque auctor. Maecenas varius, velit quis laoreet tincidunt, elit nunc ornare felis, et convallis metus nisi mollis libero. Suspendisse potenti.</p><br>
-                <img src="https://news.gearvn.com/wp-content/uploads/2020/11/pubg-mobile-z1.jpg" style="width: 98%">
-                <p style="font-family: lato-ita;font-size: 2vh;margin: 0 1vh">Ảnh trên mạng lấy về test</p>
-                <p style="font-family: lato-thin;font-size: 3vh;margin: 0 1vh"><br>
-
-Duis vel ante non leo feugiat iaculis ut quis diam. Donec ut mi vel velit luctus iaculis. Suspendisse vehicula malesuada eros placerat cursus. Mauris et sodales elit, in semper urna. In quis enim a felis tristique finibus. Ut dui sem, ultrices tempor blandit ac, varius quis libero. Cras nisl libero, posuere vitae metus sit amet, iaculis fringilla mi. Praesent convallis enim enim, eget imperdiet justo tempus non. Cras vitae dolor iaculis, rhoncus dui nec, dictum dolor. Morbi rutrum tempor lorem non malesuada. Quisque commodo lacus quis dolor pulvinar, eget dignissim sem ultrices. Aliquam nec odio quis magna mollis iaculis at vitae nisi.<br><br>
-
-Sed vitae tortor mattis, finibus lectus ac, faucibus metus. Quisque efficitur tincidunt lorem, eu rutrum quam semper sit amet. Sed ultricies metus non augue maximus iaculis. Sed tortor libero, sollicitudin et leo quis, malesuada lobortis lacus. Nam libero ex, eleifend nec mollis ac, pretium sit amet lacus. Proin vel tincidunt risus, id tempus arcu. Morbi aliquam leo non nulla efficitur aliquet. Sed sollicitudin urna orci, faucibus convallis ipsum consectetur non. Curabitur a nibh eu est consectetur venenatis. Donec ipsum augue, pulvinar ut odio et, imperdiet consectetur urna. Aenean quis justo et dolor congue pulvinar.<br><br>
-
-Aenean aliquam tincidunt sem, non commodo diam tempor et. Donec luctus commodo odio, ut egestas ex placerat a. Aenean cursus lacus mauris. Phasellus accumsan turpis dui, eu hendrerit metus condimentum vitae. Donec facilisis lectus a vehicula lobortis. Fusce elit ligula, rhoncus ac pellentesque quis, pulvinar ac libero. Duis auctor aliquet dui id molestie. Vivamus interdum, mi ut gravida malesuada, elit elit pharetra diam, vitae lobortis mi tellus non risus. In blandit dui sed tellus semper luctus. Vestibulum fringilla velit sed sodales suscipit. Mauris sed quam ac nunc bibendum rutrum. Maecenas et placerat felis. Morbi mattis elit felis, et egestas felis mattis a. Nunc feugiat non purus vel feugiat. Duis accumsan pellentesque auctor.
-                </p><br>
-                <p style="font-family: lato;font-size: 2vh;margin: 2vh 2vh 0">Bạn nghĩ dưới đây có <a href="https://facebook.com/nkv.shadichy">link FB</a> ư? Không, tôi là <a href="https://github.com/shadichy">Dio</a></p>
-            </div>
-        </div>
-    </div>
-    <div style="display: block;filter:drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));position: absolute;left: 130vh;top:10vh;height: calc(100% - 10vh);overflow: show;">
-        <div style="position: sticky;top: 10vh;background: linear-gradient(45deg,rgb(255, 0, 255),rgb(255, 80, 80),rgb(255, 153, 0));padding: .1vh; width: 54.3vh;clip-path: polygon(0 0,calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 5vh 100%, 0 calc(100% - 5vh))">
-            <div style="background: #333;width: 50vh;clip-path: polygon(0 0,calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 5vh 100%, 0 calc(100% - 5vh));font-size: 5vh;padding: 2vh;height: 26vh">
-                <p>Tác giả bài viết<br><a href="https://facebook.com/nkv.shadichy">Link FB</a> <a href="https://github.com/shadichy">Link Git Hub</a><br>Uy tín</p><br>
-            </div>
-        </div>
-        <div style="position: sticky;top: 50vh;background: linear-gradient(45deg,rgb(255, 0, 255),rgb(255, 80, 80),rgb(255, 153, 0));padding: .1vh; width: 54.3vh;clip-path: polygon(0 0,calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 5vh 100%, 0 calc(100% - 5vh))">
-            <div style="background: #333;width: 50vh;clip-path: polygon(0 0,calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 5vh 100%, 0 calc(100% - 5vh));font-size: 5vh;padding: 2vh;height: 26vh">
-                <p>Bài báo khác<br>slide show 1<br>slideshow 2</p><br>
-            </div>
-        </div>
-    </div>
+                <div id="nws" style="display: block;filter:drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));position: relative;">
+                    <div style="background: linear-gradient(45deg,rgb(255, 0, 255),rgb(255, 80, 80),rgb(255, 153, 0)); width: 104.2vmin;margin:10vmin 0 0 10vmin;clip-path: polygon(0 0,calc(100% - 5vmin) 0, 100% 5vmin, 100% 100%, 5vmin 100%, 0 calc(100% - 5vmin));padding:.1vmin">
+                        <div style="background: #333;width: 100vmin;clip-path: polygon(0 0,calc(100% - 5vmin) 0, 100% 5vmin, 100% 100%, 5vmin 100%, 0 calc(100% - 5vmin));font-size: 5vmin;padding: 2vmin;">
+                            <p style="font-family: lato-bold;font-size: 6vmin;margin:2vmin 1vmin 1vmin">Vâng và chào mừng các bạn đến với trang web của thằng Shadichy!</p>
+                            <p style="font-family: lato-ita;font-size: 2vmin;margin: 0 3vmin 3vmin">Link FB bên dưới, tí vô report</p>
+                            <p style="font-family: lato-thin;font-size: 3vmin;margin: 0 1vmin;text-indent: 4vmin">Test web be like: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu vestibulum magna. Aenean eget enim vitae diam facilisis consectetur vel vitae urna. Phasellus eget commodo diam, non cursus ligula. Nullam velit tortor, condimentum vitae tristique consequat, fringilla eu enim. Fusce at nulla pulvinar, tristique augue eu, vestibulum libero. Aliquam erat volutpat. Nulla finibus, mauris vitae rhoncus accumsan, enim elit interdum libero, non malesuada leo purus id dolor. Pellentesque vitae felis dignissim, ultricies urna convallis, bibendum sapien. In hac habitasse platea dictumst. Mauris lacinia magna at dolor semper accumsan. Praesent at elementum odio, vitae lacinia orci. Proin pretium venenatis hendrerit. Donec eget iaculis ex, vitae bibendum orci.<br><br></p>
+                            <p style="font-family: lato-thin;font-size: 3vmin;margin: 0 1vmin;text-indent: 4vmin">Fusce porta, tellus nec pulvinar malesuada, augue enim congue ex, a molestie sem dui vitae sapien. Aenean rutrum nibh eget nulla suscipit aliquet. Nulla risus diam, placerat non vehicula ut, porta et lacus. Vestibulum auctor dui placerat justo porttitor, nec pulvinar ipsum ultricies. Nullam pulvinar tempor egestas. Sed facilisis vestibulum faucibus. Donec tellus felis, luctus non ultrices id, mollis et ligula. Donec porttitor luctus laoreet. Vivamus vel scelerisque metus, vel dapibus orci. Etiam dapibus sapien at est dignissim elementum sed quis lacus. Fusce elementum sed nunc at condimentum. Sed facilisis leo vel urna congue, eu blandit neque auctor. Maecenas varius, velit quis laoreet tincidunt, elit nunc ornare felis, et convallis metus nisi mollis libero. Suspendisse potenti.</p><br>
+                            <img src="https://news.gearvn.com/wp-content/uploads/2020/11/pubg-mobile-z1.jpg" style="width: 98%">
+                            <p style="font-family: lato-ita;font-size: 2vmin;margin: 0 1vmin">Ảnh trên mạng lấy về test</p><br>
+                            <p style="font-family: lato-thin;font-size: 3vmin;margin: 0 1vmin;text-indent: 4vmin">Duis vel ante non leo feugiat iaculis ut quis diam. Donec ut mi vel velit luctus iaculis. Suspendisse vehicula malesuada eros placerat cursus. Mauris et sodales elit, in semper urna. In quis enim a felis tristique finibus. Ut dui sem, ultrices tempor blandit ac, varius quis libero. Cras nisl libero, posuere vitae metus sit amet, iaculis fringilla mi. Praesent convallis enim enim, eget imperdiet justo tempus non. Cras vitae dolor iaculis, rhoncus dui nec, dictum dolor. Morbi rutrum tempor lorem non malesuada. Quisque commodo lacus quis dolor pulvinar, eget dignissim sem ultrices. Aliquam nec odio quis magna mollis iaculis at vitae nisi.<br><br></p>
+                            <p style="font-family: lato-thin;font-size: 3vmin;margin: 0 1vmin;text-indent: 4vmin">Sed vitae tortor mattis, finibus lectus ac, faucibus metus. Quisque efficitur tincidunt lorem, eu rutrum quam semper sit amet. Sed ultricies metus non augue maximus iaculis. Sed tortor libero, sollicitudin et leo quis, malesuada lobortis lacus. Nam libero ex, eleifend nec mollis ac, pretium sit amet lacus. Proin vel tincidunt risus, id tempus arcu. Morbi aliquam leo non nulla efficitur aliquet. Sed sollicitudin urna orci, faucibus convallis ipsum consectetur non. Curabitur a nibh eu est consectetur venenatis. Donec ipsum augue, pulvinar ut odio et, imperdiet consectetur urna. Aenean quis justo et dolor congue pulvinar.<br><br></p>
+                            <p style="font-family: lato-thin;font-size: 3vmin;margin: 0 1vmin;text-indent: 4vmin">Aenean aliquam tincidunt sem, non commodo diam tempor et. Donec luctus commodo odio, ut egestas ex placerat a. Aenean cursus lacus mauris. Phasellus accumsan turpis dui, eu hendrerit metus condimentum vitae. Donec facilisis lectus a vehicula lobortis. Fusce elit ligula, rhoncus ac pellentesque quis, pulvinar ac libero. Duis auctor aliquet dui id molestie. Vivamus interdum, mi ut gravida malesuada, elit elit pharetra diam, vitae lobortis mi tellus non risus. In blandit dui sed tellus semper luctus. Vestibulum fringilla velit sed sodales suscipit. Mauris sed quam ac nunc bibendum rutrum. Maecenas et placerat felis. Morbi mattis elit felis, et egestas felis mattis a. Nunc feugiat non purus vel feugiat. Duis accumsan pellentesque auctor.</p><br>
+                            <p style="font-family: lato;font-size: 2vmin;margin: 2vmin 2vmin 0">Bạn nghĩ dưới đây có <a href="https://facebook.com/nkv.shadichy">link FB</a> ư? Không, tôi là <a href="https://github.com/shadichy">Dio</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="sct" style="display: block;position: absolute;left: 130vmin;top:10vmin;overflow: show;">
+                    <div style=";filter:drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));position: sticky;top: 10vmin;">
+                        <div style="background: linear-gradient(45deg,rgb(255, 0, 255),rgb(255, 80, 80),rgb(255, 153, 0));padding: .1vmin; width: 54.3vmin;clip-path: polygon(0 0,calc(100% - 5vmin) 0, 100% 5vmin, 100% 100%, 5vmin 100%, 0 calc(100% - 5vmin))">
+                            <div style="background: #333;width: 50vmin;clip-path: polygon(0 0,calc(100% - 5vmin) 0, 100% 5vmin, 100% 100%, 5vmin 100%, 0 calc(100% - 5vmin));font-size: 5vmin;padding: 2vmin;height: 26vmin">
+                                <p>Tác giả bài viết<br><a href="https://facebook.com/nkv.shadichy">Link FB</a> <a href="https://github.com/shadichy">Link Git Hub</a><br>Uy tín</p><br>
+                            </div>
+                    </div>
+                        <div style="margin-top: 10vmin;background: linear-gradient(45deg,rgb(255, 0, 255),rgb(255, 80, 80),rgb(255, 153, 0));padding: .1vmin; width: 54.3vmin;clip-path: polygon(0 0,calc(100% - 5vmin) 0, 100% 5vmin, 100% 100%, 5vmin 100%, 0 calc(100% - 5vmin))">
+                            <div style="background: #333;width: 50vmin;clip-path: polygon(0 0,calc(100% - 5vmin) 0, 100% 5vmin, 100% 100%, 5vmin 100%, 0 calc(100% - 5vmin));font-size: 5vmin;padding: 2vmin;height: 26vmin">
+                                <p>Bài báo khác<br>slide show 1<br>slideshow 2</p><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: grid;filter:drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));position: relative;">
+                    <div style="background: linear-gradient(45deg,rgb(255, 0, 255),rgb(255, 80, 80),rgb(255, 153, 0));margin:10vmin 10vmin 0;clip-path: polygon(0 0,calc(100% - 5vmin) 0, 100% 5vmin, 100% 100%, 5vmin 100%, 0 calc(100% - 5vmin));padding:.1vmin">
+                        <div style="background: #333;clip-path: polygon(0 0,calc(100% - 5vmin) 0, 100% 5vmin, 100% 100%, 5vmin 100%, 0 calc(100% - 5vmin));font-size: 5vmin;padding: 2vmin;height: 26vmin">
+                            <p>Related</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="sld">
                 <div style="display: block;background: #f60;height: 100%">c</div>
@@ -198,16 +198,16 @@ Aenean aliquam tincidunt sem, non commodo diam tempor et. Donec luctus commodo o
                 <div style="display: block;background: lime;height: 100%">c</div>
             </div>
         </div>
-    <div style="display: block;width: 100%;height: 28vh;background: #f60;margin: 16vh 0">
+    <div style="display: block;width: 100%;height: 28vmin;background: #f60;margin-top: 16vmin">
     </div>
     </div>
     <div class="ccv al">
-        <div style="border: 0.2vh solid #888888;width: 26.8vh;height: 30vh;background: linear-gradient(-45deg,#ff00ff,#00ffff);clip-path: polygon(0 0, 75% 0, 100% 22%, 100% 100%, 25% 100%, 0 78%);">
-            <ul style="margin: 0.1vh;height: 29.8vh;clip-path: polygon(0 0, 75% 0, 100% 22%, 100% 100%, 25% 100%, 0 78%);background: #ffffff;padding: 0">
+        <div style="border: 0.2vmin solid #888888;width: 26.8vmin;height: 30vmin;background: linear-gradient(-45deg,#ff00ff,#00ffff);clip-path: polygon(0 0, 75% 0, 100% 22%, 100% 100%, 25% 100%, 0 78%);">
+            <ul style="margin: 0.1vmin;height: 29.8vmin;clip-path: polygon(0 0, 75% 0, 100% 22%, 100% 100%, 25% 100%, 0 78%);background: #ffffff;padding: 0">
                 <li class="c">Share</li>
                 <li class="c">sd</li>
                 <li class="c">Reload</li>
-                <div style="margin: 1vh;border-top: 0.1vh solid #888888"></div>
+                <div style="margin: 1vmin;border-top: 0.1vmin solid #888888"></div>
                 <li class="c">Language</li>
                 <li class="c">Customize</li>
             </ul>
@@ -231,7 +231,17 @@ Aenean aliquam tincidunt sem, non commodo diam tempor et. Donec luctus commodo o
             return false;
         };
         var cm = document.getElementsByClassName("ccv"),
-            cc = document.getElementsByClassName("cc");
+            cc = document.getElementsByClassName("cc"),
+            xsl;
+        setTimeout(
+            function(){
+                if (window.innerHeight < window.innerWidth) {
+                    xsl = window.innerHeight
+                } else {
+                    xsl = window.innerWidth
+                }
+                document.getElementById("sct").style.height = parseFloat(window.getComputedStyle(document.getElementById("nws")).getPropertyValue("height")) / xsl * 100 + "vh";
+            },500);
         window.addEventListener("contextmenu", (e) => {
             e.preventDefault();
             cm[0].style.display = "block";
