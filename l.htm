@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <body style="margin:0;background:#555">
+        <div onclick="ex()" style="position: fixed; background: rgba(255,255,255,0.4); z-index:10;width:10vh; height:10vh; right:1vh;top:1vh; border-radius: 50% 50%" class="butn">
+            <div style="position:fixed; width:6vh; height:1vh; background:rgba(255,255,255,0.5); top: 3.5vh; right:3vh; border-radius: 10vh 10vh"></div>
+            <div style="position:fixed; width:6vh; height:1vh; background:rgba(255,255,255,0.5); top: 5.5vh; right:3vh; border-radius: 10vh 10vh"></div>
+            <div style="position:fixed; width:6vh; height:1vh; background:rgba(255,255,255,0.5); top: 7.5vh; right:3vh; border-radius: 10vh 10vh"></div>
+        </div>
+        <div style="position: fixed; top:0; right: 0; display:none; background: red " class="menu">
+            <div style="font-size:10vh; padding: 2vh;font-family: liberation; color:orange; position: fixed; top: 0; left: 0" class="c">
+                <div>HELLO </div>
+                <div>MOTHER FUCKER</div>
+            </div>
+        </div>
+        <style>
+            .ani {
+                border-radius: 0 0 0 100vh;
+                animation: show 1s forwards;
+            }
+            .fade {animation: ff 0.5s forwards;}
+            @keyframes ff {
+                0% {opacity: 0}
+                50% {opacity: 0}
+                100% { opacity: 1}
+            }
+            @keyframes show {
+                from {width: 0; height:0}
+                to {width:200vh; height: 200vh}
+            }
+        </style>
+        <script lang="javascript">
+            var menu = document.getElementsByClassName("menu"),
+                butn = document.getElementsByClassName("butn"),
+                ct = document.getElementsByClassName("c");
+                cou = 0;
+            function ex() {
+                if (cou == 0) {
+                    menu[0].style.display = "block";
+                    menu[0].classList.add("ani");
+                    ct[0].classList.add("fade")
+                    cou = 1;
+                } else {
+                    menu[0].style.display = "none";
+                    cou = 0;
+                };
+            };
+        </script>
+    </body>
+</html>
