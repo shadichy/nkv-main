@@ -1,10 +1,5 @@
-### Nekaprov's main repo ###
+# Nekaprov's main repo #
 
+The website here
 
-This is our main repo
-
-
-Website resources
-
-
-Video editing resources
+the canvas.html was moved to [shadichy/unamed-game](https://github.com/shadichy/unamed-game).
